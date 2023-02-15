@@ -1,0 +1,307 @@
+:root {
+  --base: #ffffff;
+  --text: #000000;
+  --pinkaccent: #fb2e86;
+  --grey: #f6f5ff;
+  --darkgrey: #a9acc6;
+  --purple: #7e33e0;
+  --ftext: 1rem;
+  --fgrandtitle: 3rem;
+  --ftitle: 2rem;
+  --fcategorie: 1.5rem;
+}
+
+body {
+  font-family: "Josefin Sans", "sans serif";
+  margin: 0;
+}
+
+.spacing {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.Profile {
+  background-color: var(--purple);
+}
+
+.profile-menu {
+  display: flex;
+  gap: var(--ftext);
+}
+
+.profile-item {
+  display: flex;
+  color: var(--base);
+}
+
+.num-tel {
+  flex-grow: 1;
+}
+
+.icon {
+  padding: 0 0.4rem;
+}
+
+.header-menu {
+  display: flex;
+  gap: var(--ftitle);
+  place-items: center;
+}
+
+.site-name {
+  font-size: var(--fgrandtitle);
+  font-weight: bold;
+  margin: var(--ftext) 0;
+  flex-grow: 0.3;
+}
+
+.home {
+  display: flex;
+}
+
+.text-home {
+  color: var(--pinkaccent);
+}
+
+.deroulant-icon {
+  width: 8px;
+  height: 4px;
+  margin: 1.3rem 0;
+}
+
+.header-menu-contact {
+  flex-grow: 1;
+}
+
+.header-menu-link,
+.home-nav-item,
+.product-details-link {
+  text-decoration: none;
+  color: var(--text);
+  margin: var(--ftext) 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.header-menu-link:hover,
+.product-details-link:hover {
+  color: var(--pinkaccent);
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--grey);
+  height: 20rem;
+  gap: 0;
+}
+
+.product-details-title {
+  font-size: var(--fgrandtitle);
+  margin-bottom: 0.5rem;
+  align-self: flex-end;
+}
+
+.product-details-menu {
+  display: flex;
+  align-self: flex-start;
+  gap: 0.2rem;
+}
+
+.product-description {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  height: 50rem;
+}
+
+.product-description-window {
+  display: flex;
+  gap: var(--ftext);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+  padding: var(--ftext);
+}
+
+.little-pictures {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ftext);
+}
+
+.big-picture {
+  flex-direction: column;
+}
+
+.number-of-votes,
+.product-name {
+  margin: 0;
+}
+
+.full-product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.star-note {
+  margin-top: var(--ftext);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star-icon {
+  padding: 0;
+}
+
+.price-tag {
+  display: flex;
+  gap: var(--fcategorie);
+}
+
+.original-price {
+  color: var(--pinkaccent);
+}
+
+.little-description {
+  color: var(--darkgrey);
+}
+
+.add-to-cart-button {
+  display: flex;
+}
+
+.social-media-description {
+  display: flex;
+}
+
+.detailed-description {
+  background-color: var(--grey);
+  height: 30rem;
+  display: flex;
+  align-items: center;
+}
+
+.detailed-description-window {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailed-description-categorie-menu {
+  display: flex;
+  gap: var(--ftitle);
+  margin-bottom: 2rem;
+}
+
+.detailed-description-categorie-link {
+  text-decoration: none;
+  color: var(--text);
+  font-size: var(--ftitle);
+}
+
+.detailed-description-title {
+  font-size: var(--fcategorie);
+  margin: 1rem 0 0 0;
+}
+
+.detailed-description-text,
+.detailed-description-list-item {
+  color: var(--darkgrey);
+}
+
+.detailed-description-list-item {
+  margin-bottom: var(--ftext);
+  list-style-image: url("images/arrow.svg");
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.related-product {
+  height: 40rem;
+  padding-top: 10%;
+}
+
+.related-product-title {
+  font-size: var(--ftitle);
+  margin-bottom: 0 0 2rem 0;
+}
+
+.related-product-selection {
+  display: grid;
+  grid-gap: var(--ftext);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+}
+
+.men-fashion {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.women-fashion {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.wolx-fashion {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.digital-clock {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.info-of-photo-men-fashion {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.info-of-photo-women-fashion {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.info-of-photo-wolx-fashion {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.info-of-photo-digital-clock {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.related-product-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-name {
+  flex-grow: 1;
+  margin: 0;
+  width: 60%;
+}
+
+.set-stars-icon {
+  max-height: 1rem;
+  margin-left: 1rem;
+}
+
+.price {
+  margin: 1rem 0 0 0;
+}
+
+.logo {
+  margin-left: 15%;
+}
+
+.big-footer {
+  height: 20rem;
+  background-color: var(--grey);
+}
